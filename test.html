@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Innovatus Technologies</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link id="theme-style" rel="stylesheet" href="test.css">
+  <!-- AOS CSS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- External JS Libraries -->
+   <!-- services hover -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- typing animtion -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="main.js" defer></script>
+  <!-- gallery animation -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ <!-- fade animation to service section -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Navbar Section -->
+  <header class="navbar" x-data="{ open: false }">
+    <!-- Logo -->
+    <div class="logo">
+      <div class="logo-line">
+        <span class="logo-name">Innovatus</span>
+        <span class="logo-tech">Technologies</span>
+      </div>
+      <div class="tagline">Implementing Ideas...</div>
+    </div>
+
+    <!-- Menu toggle (mobile) -->
+    <button class="menu-btn" @click="open = !open" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Nav links -->
+    <nav class="nav-links" :class="{ 'show': open }">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#technologies">Technologies</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      <a
+        href="https://wa.me/919657826868?text=Hello%20Innovatus%20Technologies%2C%20I%27m%20interested%20in%20your%20services."
+        class="btn-talk"
+        target="_blank">
+        Let’s Talk
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Building Future-Ready Digital Solutions</h1>
+      <p>From web apps to enterprise software, we craft scalable, smart, and secure tech.</p>
+      <p class="learn-line">Learn <span class="typed-text" id="typed"></span></p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary">Explore Our Work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.png" alt="Developer Illustration" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-modern">
+    <h2 class="section-title">What We Do</h2>
+    <div class="service-container">
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-chalkboard-teacher"></i><p>Corporate Trainings</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-university"></i><p>College Workshops</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-code"></i><p>B.E Projects</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-microchip"></i><p>IEEE Implementation</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-user-graduate"></i><p>PhD Guidance</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-briefcase"></i><p>Placements</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-cogs"></i><p>Custom Software</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-search-dollar"></i><p>CRM & SEO</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-building"></i><p>Banking Solutions</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-search"></i><p>Search Optimization</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-globe"></i><p>Web Services</p></div>
+      <div class="service-box" data-aos="fade-up"><i class="fas fa-compass"></i><p>Career Guidance</p></div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          <strong>Innovatus Technologies</strong> is powered by seasoned tech professionals with experience dating back to 1999. We began in Bangalore, building software for the banking and hospitality sectors, and expanded to Pune in 2005 to explore new industries and establish our training division.
+        </p>
+        <p>Our commitment to quality, innovation, and client satisfaction has helped us grow across domains—earning trust from businesses across India and abroad. We deliver smart, scalable, and reliable software solutions at competitive rates, while remaining highly responsive and client-focused.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/ab.png" alt="Team Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section py-10 px-4">
+    <h2 class="section-title">Gallery</h2>
+    <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+      <!-- Image 1 -->
+      <div class="gallery-item">
+        <img src="images/1.png" alt="Gallery Image 1" class="gallery-media" />
+      </div>
+      <!-- Image 2 -->
+      <div class="gallery-item">
+        <img src="images/2.png" alt="Gallery Image 2" class="gallery-media" />
+      </div>
+      <!-- Image 3 -->
+      <div class="gallery-item">
+        <img src="images/3.png" alt="Gallery Image 3" class="gallery-media" />
+      </div>
+      <!-- Video 1 -->
+      <div class="gallery-item">
+        <video class="gallery-media" muted autoplay loop>
+          <source src="images/2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="technologies">
+    <h2 class="section-title">Technologies We Use</h2>
+    <div class="tech-auto-slider">
+      <div class="tech-row">
+        <div class="tech-card">C</div>
+        <div class="tech-card">C++</div>
+        <div class="tech-card">C#</div>
+        <div class="tech-card">Java</div>
+        <div class="tech-card">Python</div>
+        <div class="tech-card">MATLAB</div>
+        <div class="tech-card">J2EE</div>
+        <div class="tech-card">J2ME</div>
+        <div class="tech-card">Android</div>
+        <div class="tech-card">Oracle</div>
+        <div class="tech-card">SQL</div>
+        <div class="tech-card">Opnet</div>
+        <div class="tech-card">Web Services</div>
+        <div class="tech-card">Network Simulation</div>
+        <div class="tech-card">Cloud Computing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h2 class="section-title">Reviews</h2>
+    <div class="reviews-container">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Great team and timely delivery of project. Highly recommended!"
+        </p>
+        <div class="review-footer">
+          <span class="review-author">Amit S.</span>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Excellent service and technical support throughout the project."
+        </p>
+        <div class="review-footer">
+          <span class="review-author">Pooja K.</span>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <p class="review-text">
+          "Innovatus delivered exactly what we needed, and ahead of schedule!"
+        </p>
+        <div class="review-footer">
+          <span class="review-author">Rahul M.</span>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-button-wrapper">
+      <a href="https://www.google.com" class="review-button">
+        <img src="images/google.png" alt="Google Logo" class="google-icon" />
+        Read All Reviews on Google
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> innovatus.in@gmai.com</p>
+        <p><i class="fas fa-phone-alt"></i> +91 9657 82 6868 / +91 9657 45 2349</p>
+        <p><i class="fas fa-map-marker-alt"></i>
+          Office No 803, C-Wing, Audumbar Building,<br>
+          Beside Vardhaman CNG Pump, Above TATA Motors,<br>
+          Mumbai Bengaluru Highway, Warje,<br>
+          Pune - 411058, Maharashtra, India.
+        </p>
+        <div class="social-icons">
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.705120038418!2d73.800454!3d18.541236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c079cfd1c89b%3A0xc72ab5b6332b9b4!2sInnovatus%20Technologies%20-%20Coding%20Courses%20%26%20Project%20Development!5e0!3m2!1sen!2sin!4v1718961550000!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-single-row">
+      <span>&copy; 2025 Innovatus Technologies. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
