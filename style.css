@@ -7,6 +7,9 @@
 body {
   font-family: "Segoe UI", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Nav */
 .navbar {
@@ -148,9 +151,9 @@ body {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #007aff;
+ color: #007aff;
   margin-bottom: 40px;
-} /* this part is repeated */
+} 
 .service-container {
   display: grid;
   gap: 20px;
@@ -255,11 +258,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.section-title {
-  font-size: 2.2rem;
-  color: var(--primary-color);
-  margin-bottom: 40px;
-} /* this part is repeated */
+
 .tech-auto-slider {
   overflow: hidden;
   width: 100%;
@@ -381,10 +380,11 @@ body {
 }
 .contact-info {
   background-color: var(--bg-color);
-  border: 1px solid var(--accent-color);
+  border: #0056cc;
   padding: 20px 25px;
   border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--accent-color);
   animation: slideInLeft 0.8s ease-out;
 }
 .contact-info p {
@@ -531,5 +531,6 @@ body {
   }
   .section-title {
     font-size: 1.8rem;
+      color: #007bff;
   }
 }
